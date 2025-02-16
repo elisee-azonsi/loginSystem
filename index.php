@@ -14,7 +14,7 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="">
+            <form action="register.php" method="POST">
                 <h1>Join Us</h1>
                 <div class="social-container">
                     <a href="" class="social"><i class="fab fa-facebook"></i></a>
@@ -22,15 +22,20 @@
                     <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>Use Your Email To SignUp</span>
-                <input type="text" name="name" placeholder="Enter your Name">
-                <input type="password" name="password" placeholder="Create your Password">
+                <input type="text" name="fullname" placeholder="Enter your Name" require/>
+                <input type="email" name="email" placeholder="Enter your Email" require/>
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Create your Password"
+                     require/>
                 <button type="submit">Register</button>
             </form>
         </div>
 
         
         <div class="form-container sign-in-container">
-            <form action="">
+            <form action="login.php" method="POST">
                 <h1>Login</h1>
                 <div class="social-container">
                     <a href="" class="social"><i class="fab fa-facebook"></i></a>
@@ -38,8 +43,8 @@
                     <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>Use Your Email To login</span>
-                <input type="text" name="name" placeholder="Enter your Name">
-                <input type="password" name="password" placeholder="Enter your Password">
+                <input type="email" name="email" placeholder="Enter your Name"/>
+                <input type="password" name="password" placeholder="Enter your Password"/>
                 <button type="submit">login</button>
             </form>
         </div>
